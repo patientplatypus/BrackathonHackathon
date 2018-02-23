@@ -1,18 +1,30 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+/* import './App.css'; */
+import Login from './Components/Login';
+import OfficialBracket from './Components/OfficialBracket';
+import RankingBracket from './Components/RankingBracket';
+import UserBracket from './Components/UserBracket';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+       <Router>
+          <div>
+            <div style={{display: "inline-block", height: "5vh", width: "100vw", backgroundColor: "rgb(200,170,240)"}}>
+              <Link to="/" style={{backgroundColor: "rgb(200, 180, 135)"}}>LOGIN</Link> &nbsp;
+              <Link to="/userbracket" style={{backgroundColor: "rgb(200, 180, 135)"}}>USER BRACKET</Link> &nbsp;
+              <Link to="/rankingbracket" style={{backgroundColor: "rgb(200, 180, 135)"}}>RANKING BRACKETS</Link> &nbsp;
+              <Link to="/officialbracket" style={{backgroundColor: "rgb(200, 180, 135)"}}>OFFICIAL BRACKET</Link> &nbsp;
+
+            </div>
+             <Route exact path='/' component={Login} />
+             <Route path='/rankingbracket' component={RankingBracket} />
+             <Route path='/userbracket' component={UserBracket} />
+             <Route path='/officialbracket' component={OfficialBracket} />
+          </div>
+       </Router>
       </div>
     );
   }
