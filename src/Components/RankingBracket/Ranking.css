@@ -5,6 +5,7 @@
 main {
     display: flex;
     flex-direction: row;
+    width: 45%;
 }
 
 .round {
@@ -66,6 +67,11 @@ li.game-top {
 
 li.game-spacer {
     border-right: 3px solid #aaa;
+    min-height: 40px;
+}
+
+li.game-spacerLeft {
+    border-left: 3px solid #aaa;
     min-height: 40px;
 }
 
