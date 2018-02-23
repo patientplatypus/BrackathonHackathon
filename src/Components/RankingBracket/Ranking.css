@@ -81,3 +81,7 @@ li.game-spacerLeft {
 li.game-bottom {
     border-top: 3px solid #aaa;
 }
+
+.oneSide {
+    width: 200%;
+}

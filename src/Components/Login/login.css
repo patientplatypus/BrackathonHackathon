@@ -1,0 +1,20 @@
+.loginLayout {
+    background-color: black;
+    text-align: center
+}
+
+.jumboStyle {
+    width: 100%;
+    height: 1200px;
+    background-color: black;
+}
+
+.helloStuff {
+    text-align: center;
+}
+
+.buttonStyle {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+}
