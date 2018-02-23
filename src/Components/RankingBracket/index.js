@@ -146,10 +146,8 @@ class RankingBracket extends Component {
 		<li class="game game-bottom winner">Duke <span>71</span></li>
 
 		<li class="spacer">&nbsp;</li>
-  
-  
-		
-	</ul>
+  	</ul>
+    
 	<ul class="round round-3">
 <li class="spacer">&nbsp;</li>
 		
