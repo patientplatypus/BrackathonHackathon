@@ -8,7 +8,6 @@ class RankingBracket extends Component {
         <p>
             RB
         </p>
- 
       </div>
     );
   }
