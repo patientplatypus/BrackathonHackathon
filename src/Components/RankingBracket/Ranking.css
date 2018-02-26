@@ -101,3 +101,9 @@ li.game-bottom {
     height: 390px;
     padding-left: 200px;
 }
+
+.spacerMiddle {
+    border-left: 3px solid #aaa;
+    height: 200px;
+    padding-left: 200px;
+}

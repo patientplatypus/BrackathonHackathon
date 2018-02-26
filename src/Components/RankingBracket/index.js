@@ -113,6 +113,14 @@ class RankingBracket extends Component {
 				<li class="spacer">&nbsp;</li>
 			</ul>	
 
+		<ul class="round round-1" id="middle">
+				<li class="spacer">&nbsp;</li>
+				<li class="game game-top winner"> <span>Left Winner</span></li>
+				<li class="game game-spacerLeft spacerMiddle">&nbsp; WINNER</li>
+				<li class="game game-bottom "> <span>Right Winner</span></li>		
+				<li class="spacer">&nbsp;</li>
+			</ul>
+
 			<ul class="round round-1">
 				<li class="spacer">&nbsp;</li>
 				
