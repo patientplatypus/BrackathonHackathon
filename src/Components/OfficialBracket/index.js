@@ -1,1263 +1,256 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col } from 'react-bootstrap';
 import './OB.css';
+import mainConfetti from './imgs/Confetti.png';
+import axios from 'axios';
 
-class OfficialBracket extends Component {
-  render() {
+class RankingBracket extends Component {
+  
+	componentDidMount(){
+		axios.get('http://localhost:5000/getStartingBracket')
+			.then(function (response) {
+				console.log('#$%@$#%@$#%@#$%@#$%@$#%@#$%@#$%');
+			console.log(response);
+			})
+			.catch(function (error) {
+			console.log(error);
+			});
+			}
+		
+	
+	render() {
     return (
-      <Grid>
-     {/* game 1 */}
-      <Row className="show-grid">
-        <Col xs={12} md={1}>  
-          <code>{'Michigan'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'WINNER'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'WINNER'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'Player1'}</code>
-        </Col>
-      </Row>
-         {/* game 2 */}
-      <Row className="show-grid">
-      <Col xs={12} md={1}>  
-          <code>{'Player2'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'Player2'}</code>
-        </Col>
-      </Row>
-         {/* game 3 */}
-      <Row className="show-grid">
-      <Col xs={12} md={1}>  
-          <code>{'Player1'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'WINNER'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'WINNER'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'Player1'}</code>
-        </Col>
-      </Row>
-         {/* game 4 */}
-      <Row className="show-grid">
-      <Col xs={12} md={1}>  
-          <code>{'Player2'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'Player2'}</code>
-        </Col>
-      </Row>
-         {/* game 5 */}
-      <Row className="show-grid">
-      <Col xs={12} md={1}>  
-          <code>{'Player1'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'WINNER'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'WINNER'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'Player1'}</code>
-        </Col>
-      </Row>
-         {/* game 6 */}
-      <Row className="show-grid">
-      <Col xs={12} md={1}>  
-          <code>{'Player1'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'WINNER'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'WINNER'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'Player2'}</code>
-        </Col>
-      </Row>
-         {/* game 7 */}
-      <Row className="show-grid">
-      <Col xs={12} md={1}>  
-          <code>{'Player2'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'Player2'}</code>
-        </Col>
-      </Row>
-      {/* game 8 */}
-      <Row className="show-grid">
-      <Col xs={12} md={1}>  
-          <code>{'Player1'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'WINNER'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'WINNER'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'Player1'}</code>
-        </Col>
-      </Row>
-      {/* game 9 */}
-      <Row className="show-grid">
-      <Col xs={12} md={1}>  
-          <code>{'Player2'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'Player2'}</code>
-        </Col>
-      </Row>
-      {/* game 10 */}
-      <Row className="show-grid">
-      <Col xs={12} md={1}>  
-          <code>{'Player1'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'WINNER'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'WINNER'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'Player1'}</code>
-        </Col>
-      </Row>
-      {/* game 11 */}
-      <Row className="show-grid">
-      <Col xs={12} md={1}>  
-          <code>{'Player2'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'Player2'}</code>
-        </Col>
-      </Row>
-      {/* game 12 */}
-      <Row className="show-grid">
-      <Col xs={12} md={1}>  
-          <code>{'Player1'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'WINNER'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'WINNER'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'Player1'}</code>
-        </Col>
-      </Row>
-      {/* game 13 */}
-      <Row className="show-grid">
-      <Col xs={12} md={1}>  
-          <code>{'Player2'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'Player2'}</code>
-        </Col>
-      </Row>
-      {/* game 14 */}
-      <Row className="show-grid">
-      <Col xs={12} md={1}>  
-          <code>{'Player1'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'WINNER'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'WINNER'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'Player1'}</code>
-        </Col>
-      </Row>
-      {/* game 15 */}
-      <Row className="show-grid">
-      <Col xs={12} md={1}>  
-          <code>{'Player2'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'Player2'}</code>
-        </Col>
-      </Row>
-      {/* game 16 */}
-      <Row className="show-grid">
-      <Col xs={12} md={1}>  
-          <code>{'Player1'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'WINNER'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'WINNER'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'Player1'}</code>
-        </Col>
-      </Row>
-      {/* game 17 */}
-      <Row className="show-grid">
-      <Col xs={12} md={1}>  
-          <code>{'Player2'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'Player2'}</code>
-        </Col>
-      </Row>
-      {/* game 18 */}
-      <Row className="show-grid">
-      <Col xs={12} md={1}>  
-          <code>{'Player1'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'WINNER'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'WINNER'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'Player1'}</code>
-        </Col>
-      </Row>
-      {/* game 19 */}
-      <Row className="show-grid">
-      <Col xs={12} md={1}>  
-          <code>{'Player2'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'Player2'}</code>
-        </Col>
-      </Row>
-      {/* game 20 */}
-      <Row className="show-grid">
-      <Col xs={12} md={1}>  
-          <code>{'Player1'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'WINNER'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'WINNER'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'Player1'}</code>
-        </Col>
-      </Row>
-      {/* game 21 */}
-      <Row className="show-grid">
-      <Col xs={12} md={1}>  
-          <code>{'Player2'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'Player2'}</code>
-        </Col>
-      </Row>
-            {/* game 22 */}
-      <Row className="show-grid">
-      <Col xs={12} md={1}>  
-          <code>{'Player1'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'WINNER'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'WINNER'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'Player1'}</code>
-        </Col>
-      </Row>
-            {/* game 23 */}
-      <Row className="show-grid">
-      <Col xs={12} md={1}>  
-          <code>{'Player2'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'Player2'}</code>
-        </Col>
-      </Row>
-            {/* game 24 */}
-      <Row className="show-grid">
-      <Col xs={12} md={1}>  
-          <code>{'Player1'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'WINNER'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'WINNER'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'Player1'}</code>
-        </Col>
-      </Row>
-            {/* game 25 */}
-      <Row className="show-grid">
-      <Col xs={12} md={1}>  
-          <code>{'Player2'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'Player2'}</code>
-        </Col>
-      </Row>
-            {/* game 26 */}
-      <Row className="show-grid">
-      <Col xs={12} md={1}>  
-          <code>{'Player1'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'WINNER'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'WINNER'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'Player1'}</code>
-        </Col>
-      </Row>
-            {/* game 27 */}
-      <Row className="show-grid">
-      <Col xs={12} md={1}>  
-          <code>{'Player2'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'Player2'}</code>
-        </Col>
-      </Row>
-            {/* game 28 */}
-      <Row className="show-grid">
-      <Col xs={12} md={1}>  
-          <code>{'Player1'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'WINNER'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'WINNER'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'Player1'}</code>
-        </Col>
-      </Row>
-            {/* game 29 */}
-      <Row className="show-grid">
-      <Col xs={12} md={1}>  
-          <code>{'Player2'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'Player2'}</code>
-        </Col>
-      </Row>
-            {/* game 30 */}
-      <Row className="show-grid">
-      <Col xs={12} md={1}>  
-          <code>{'Player1'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'WINNER'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'WINNER'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'Player1'}</code>
-        </Col>
-      </Row>
-            {/* game 31 */}
-      <Row className="show-grid">
-      <Col xs={12} md={1}>  
-          <code>{'Player2'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'Player2'}</code>
-        </Col>
-      </Row>
-            {/* game 32 */}
-      <Row className="show-grid">
-      <Col xs={12} md={1}>  
-          <code>{'Player1'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'WINNER'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{''}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'WINNER'}</code>
-        </Col>
-        <Col xs={12} md={1}>
-          <code>{'Player1'}</code>
-        </Col>
-      </Row>
-    </Grid>
+      <div className="mainSection">
+     
+     <h1 className="text-white"> Tournament Bracket</h1>
+        {/* Left */}
+        <div className="oneSide">
+ <main id="tournament">
+   <ul class="round round-1">
+     <li class="spacer">&nbsp;</li>
+     
+     <li class="game game-top winner">Lousville <span>79</span></li>
+     <li class="game game-spacer">&nbsp;</li>
+     <li class="game game-bottom ">NC A&T <span>48</span></li>
 
+     <li class="spacer">&nbsp;</li>
+     
+     <li class="game game-top winner">Colo St <span>84</span></li>
+     <li class="game game-spacer">&nbsp;</li>
+     <li class="game game-bottom ">Missouri <span>72</span></li>
+
+     <li class="spacer">&nbsp;</li>
+     
+     <li class="game game-top ">Oklahoma St <span>55</span></li>
+     <li class="game game-spacer">&nbsp;</li>
+     <li class="game game-bottom winner">Oregon <span>68</span></li>
+
+     <li class="spacer">&nbsp;</li>
+     
+     <li class="game game-top winner">Saint Louis <span>64</span></li>
+     <li class="game game-spacer">&nbsp;</li>
+     <li class="game game-bottom ">New Mexico St <span>44</span></li>
+
+     <li class="spacer">&nbsp;</li>
+     
+     <li class="game game-top winner">Memphis <span>54</span></li>
+     <li class="game game-spacer">&nbsp;</li>
+     <li class="game game-bottom ">St Mary's <span>52</span></li>
+
+     <li class="spacer">&nbsp;</li>
+     
+     <li class="game game-top winner">Mich St <span>65</span></li>
+     <li class="game game-spacer">&nbsp;</li>
+     <li class="game game-bottom ">Valparaiso <span>54</span></li>
+
+     <li class="spacer">&nbsp;</li>
+     
+     <li class="game game-top winner">Creighton <span>67</span></li>
+     <li class="game game-spacer">&nbsp;</li>
+     <li class="game game-bottom ">Cincinnati <span>63</span></li>
+
+     <li class="spacer">&nbsp;</li>
+     
+     <li class="game game-top winner">Duke <span>73</span></li>
+     <li class="game game-spacer">&nbsp;</li>
+     <li class="game game-bottom ">Albany <span>61</span></li>
+
+     <li class="spacer">&nbsp;</li>
+   </ul>
+   <ul class="round round-2">
+     <li class="spacer">&nbsp;</li>
+     
+     <li class="game game-top winner">Lousville <span>82</span></li>
+     <li class="game game-spacer">&nbsp;</li>
+     <li class="game game-bottom ">Colo St <span>56</span></li>
+
+     <li class="spacer">&nbsp;</li>
+     
+     <li class="game game-top winner">Oregon <span>74</span></li>
+     <li class="game game-spacer">&nbsp;</li>
+     <li class="game game-bottom ">Saint Louis <span>57</span></li>
+
+     <li class="spacer">&nbsp;</li>
+     
+     <li class="game game-top ">Memphis <span>48</span></li>
+     <li class="game game-spacer">&nbsp;</li>
+     <li class="game game-bottom winner">Mich St <span>70</span></li>
+
+     <li class="spacer">&nbsp;</li>
+     
+     <li class="game game-top ">Creighton <span>50</span></li>
+     <li class="game game-spacer">&nbsp;</li>
+     <li class="game game-bottom winner">Duke <span>66</span></li>
+
+     <li class="spacer">&nbsp;</li>
+   </ul>
+   <ul class="round round-3">
+     <li class="spacer">&nbsp;</li>
+     
+     <li class="game game-top winner">Lousville <span>77</span></li>
+     <li class="game game-spacer">&nbsp;</li>
+     <li class="game game-bottom ">Oregon <span>69</span></li>
+
+     <li class="spacer">&nbsp;</li>
+     
+     <li class="game game-top ">Mich St <span>61</span></li>
+     <li class="game game-spacer">&nbsp;</li>
+     <li class="game game-bottom winner">Duke <span>71</span></li>
+
+     <li class="spacer">&nbsp;</li>
+   </ul>
+   <ul class="round round-4">
+     <li class="spacer">&nbsp;</li>
+     
+     <li class="game game-top winner">Lousville <span>85</span></li>
+     <li class="game game-spacer">&nbsp;</li>
+     <li class="game game-bottom ">Duke <span>63</span></li>
+     
+     <li class="spacer">&nbsp;</li>
+   </ul>	
+
+ <ul class="round round-1" id="middle">
+     <li class="spacer">&nbsp;</li>
+     <li class="game game-top winner"> <span>Left Winner</span></li>
+     <li class="game game-spacerLeft spacerMiddle"  >&nbsp; 
+     <span id="winnerText">WINNER</span>
+     <img src={mainConfetti} class="confettiImg" alt="fireSpot"/>
+     </li>
+     <li class="game game-bottom "> <span>Right Winner</span></li>		
+     <li class="spacer">&nbsp;</li>
+   </ul>
+
+   <ul class="round round-1">
+     <li class="spacer">&nbsp;</li>
+     
+     <li class="game game-top winner"> <span>85</span></li>
+     <li class="game game-spacerLeft spacerLeft4">&nbsp;</li>
+     <li class="game game-bottom ">Duke <span>63</span></li>		
+     <li class="spacer">&nbsp;</li>
+
+     
+   </ul>
+   <ul class="round round-2">
+ 
+     <li class="spacer">&nbsp;</li>
+     
+     <li class="game game-top winner">Lousville <span>77</span></li>
+     <li class="game game-spacerLeft spacerLeft3">&nbsp;</li>
+     <li class="game game-bottom ">Oregon <span>69</span></li>
+
+     <li class="spacer">&nbsp;</li>
+     
+     <li class="game game-top ">Mich St <span>61</span></li>
+     <li class="game game-spacerLeft spacerLeft3">&nbsp;</li>
+     <li class="game game-bottom winner">Duke <span>71</span></li>
+
+     <li class="spacer">&nbsp;</li>
+   </ul>
+   <ul class="round round-3">
+     <li class="spacer">&nbsp;</li>
+     
+     <li class="game game-top winner">Lousville <span>82</span></li>
+     <li class="game spacerLeft2">&nbsp;</li>
+     <li class="game game-bottom ">Colo St <span>56</span></li>
+
+     <li class="spacer">&nbsp;</li>
+     
+     <li class="game game-top winner">Oregon <span>74</span></li>
+     <li class="game game-spacerLeft spacerLeft2">&nbsp;</li>
+     <li class="game game-bottom ">Saint Louis <span>57</span></li>
+
+     <li class="spacer">&nbsp;</li>
+     
+     <li class="game game-top ">Memphis <span>48</span></li>
+     <li class="game game-spacerLeft spacerLeft2">&nbsp;</li>
+     <li class="game game-bottom winner">Mich St <span>70</span></li>
+
+     <li class="spacer">&nbsp;</li>
+     
+     <li class="game game-top ">Creighton <span>50</span></li>
+     <li class="game game-spacerLeft spacerLeft2">&nbsp;</li>
+     <li class="game game-bottom winner">Duke <span>66</span></li>
+
+     <li class="spacer">&nbsp;</li>
+
+
+   </ul>
+   <ul class="round round-4">
+     <li class="spacer">&nbsp;</li>
+     
+     <li class="game game-top winner">Lousville <span>79</span></li>
+     <li class="game game-spacerLeft">&nbsp;</li>
+     <li class="game game-bottom ">NC A&T <span>48</span></li>
+
+     <li class="spacer">&nbsp;</li>
+     
+     <li class="game game-top winner">Colo St <span>84</span></li>
+     <li class="game game-spacerLeft">&nbsp;</li>
+     <li class="game game-bottom ">Missouri <span>72</span></li>
+
+     <li class="spacer">&nbsp;</li>
+     
+     <li class="game game-top ">Oklahoma St <span>55</span></li>
+     <li class="game game-spacerLeft">&nbsp;</li>
+     <li class="game game-bottom winner">Oregon <span>68</span></li>
+
+     <li class="spacer">&nbsp;</li>
+     
+     <li class="game game-top winner">Saint Louis <span>64</span></li>
+     <li class="game game-spacerLeft">&nbsp;</li>
+     <li class="game game-bottom ">New Mexico St <span>44</span></li>
+
+     <li class="spacer">&nbsp;</li>
+     
+     <li class="game game-top winner">Memphis <span>54</span></li>
+     <li class="game game-spacerLeft">&nbsp;</li>
+     <li class="game game-bottom ">St Mary's <span>52</span></li>
+
+     <li class="spacer">&nbsp;</li>
+     
+     <li class="game game-top winner">Mich St <span>65</span></li>
+     <li class="game game-spacerLeft">&nbsp;</li>
+     <li class="game game-bottom ">Valparaiso <span>54</span></li>
+
+     <li class="spacer">&nbsp;</li>
+     
+     <li class="game game-top winner">Creighton <span>67</span></li>
+     <li class="game game-spacerLeft">&nbsp;</li>
+     <li class="game game-bottom ">Cincinnati <span>63</span></li>
+
+     <li class="spacer">&nbsp;</li>
+     
+     <li class="game game-top winner">Duke <span>73</span></li>
+     <li class="game game-spacerLeft">&nbsp;</li>
+     <li class="game game-bottom ">Albany <span>61</span></li>
+
+     <li class="spacer">&nbsp;</li>
+   </ul>			
+ </main>
+ </div>
+ 
+   </div>
     );
   }
 }
 
-export default OfficialBracket;
+export default RankingBracket;

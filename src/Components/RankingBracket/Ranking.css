@@ -55,23 +55,23 @@ li.game.winner {
 
 li.game span {
     float: right;
-    margin-right: 3px;
+    margin-right: 4px;
 }
 
 li.game-top {
-    border-bottom: 3px solid #aaa;
+    border-bottom: 4px solid #fff;
 }
 
 
 /*sides*/
 
 li.game-spacer {
-    border-right: 3px solid #aaa;
+    border-right: 4px solid #fff;
     min-height: 40px;
 }
 
 li.game-spacerLeft {
-    border-left: 3px solid #aaa;
+    border-left: 4px solid #fff;
     min-height: 40px;
 }
 
@@ -79,7 +79,7 @@ li.game-spacerLeft {
 /*bottom*/
 
 li.game-bottom {
-    border-top: 3px solid #aaa;
+    border-top: 4px solid #fff;
 }
 
 .oneSide {
@@ -87,23 +87,57 @@ li.game-bottom {
 }
 
 .spacerLeft2 {
-    border-left: 3px solid #aaa;
+    border-left: 4px solid #fff;
     height: 100px;
 }
 
 .spacerLeft3 {
-    border-left: 3px solid #aaa;
+    border-left: 4px solid #fff;
     height: 175px;
 }
 
 .spacerLeft4 {
-    border-left: 3px solid #aaa;
+    border-left: 4px solid #fff;
     height: 390px;
     padding-left: 200px;
 }
 
 .spacerMiddle {
-    border-left: 3px solid #aaa;
+    border-left: 4px solid #fff;
     height: 200px;
     padding-left: 200px;
+}
+
+.confettiImg {
+    height: 125px;
+    padding-top: 25px;
+}
+
+.winnerText {
+    font-size: 22px;
+    text-align: center;
+}
+
+.mainSection {
+    background-image: url("./imgs/Basketball-Wallpaper.jpg");
+    padding: 20px;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-white {
+    color: white;
+}
+
+#tournament {
+    background-color: black;
+    opacity: .8;
+    padding: 50px;
+    margin-left: 3%;
+    height: 1300px;
+}
+
+#rankings {
+    width: 100%;
 }

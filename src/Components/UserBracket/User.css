@@ -1,0 +1,137 @@
+/*
+ *  Flex Layout Specifics
+*/
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+}
+
+.round {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    list-style: none;
+    padding: 0;
+}
+
+.round .spacer {
+    flex-grow: 1;
+}
+
+.round .spacer:first-child,
+.round .spacer:last-child {
+    flex-grow: .5;
+}
+
+.round .game-spacer {
+    flex-grow: 1;
+}
+
+
+/*
+   *  General Styles
+  */
+
+body {
+    font-family: sans-serif;
+    font-size: small;
+    padding: 10px;
+    line-height: 1.4em;
+}
+
+li.game {
+    padding-left: 20px;
+}
+
+li.game.winner {
+    font-weight: bold;
+}
+
+
+/*bottom*/
+
+li.game span {
+    float: right;
+    margin-right: 4px;
+}
+
+li.game-top {
+    border-bottom: 4px solid #fff;
+}
+
+
+/*sides*/
+
+li.game-spacer {
+    border-right: 4px solid #fff;
+    min-height: 40px;
+}
+
+li.game-spacerLeft {
+    border-left: 4px solid #fff;
+    min-height: 40px;
+}
+
+
+/*bottom*/
+
+li.game-bottom {
+    border-top: 4px solid #fff;
+}
+
+.oneSide {
+    width: 200%;
+}
+
+.spacerLeft2 {
+    border-left: 4px solid #fff;
+    height: 100px;
+}
+
+.spacerLeft3 {
+    border-left: 4px solid #fff;
+    height: 175px;
+}
+
+.spacerLeft4 {
+    border-left: 4px solid #fff;
+    height: 390px;
+    padding-left: 200px;
+}
+
+.spacerMiddle {
+    border-left: 4px solid #fff;
+    height: 200px;
+    padding-left: 200px;
+}
+
+.confettiImg {
+    height: 125px;
+    padding-top: 25px;
+}
+
+.winnerText {
+    font-size: 22px;
+    text-align: center;
+}
+
+.mainSection {
+    background-image: url("./imgs/Basketball-Wallpaper.jpg");
+    padding: 20px;
+    color: #fff;
+}
+
+.text-white {
+    color: white;
+}
+
+#tournament {
+    background-color: black;
+    background-repeat: no-repeat;
+    opacity: .8;
+    padding: 50px;
+    margin-left: 3%;
+}
